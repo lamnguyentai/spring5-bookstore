@@ -22,20 +22,21 @@
             }
 
 
-
         }
     </style>
 
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="/image/mynameicon.png">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">固定ナビゲーションバー</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -58,37 +59,42 @@
     </div>
 </nav>
 
-    <div class="container">
+<div class="container">
     <div class="row">
         <div class="col-sm-8">
             <div class="card">
                 <div class="card-body">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="d-block w-100">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://mdbootstrap.com/img/new/slides/041.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://mdbootstrap.com/img/new/slides/042.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://mdbootstrap.com/img/new/slides/043.jpg" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://mdbootstrap.com/img/new/slides/042.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://mdbootstrap.com/img/new/slides/043.jpg" class="d-block w-100">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
                 </div>
             </div>
         </div>
@@ -96,32 +102,100 @@
             <img src="/image/logo.jpg" class="img-fluid">
         </div>
     </div>
-        <hr/>
+    <hr class="bg-dark border-2 border-top border-dark" style="height: 1px;">
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/image/jiyu.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/image/hasitenai.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/image/momo.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </div>
 
-<div class="row">
-    <div class="col-sm-4">
+    <div>
+        <div class="home-headline"><span>Featured Books</span></div>
+        <hr class="bg-dark border-2 border-top border-dark" style="height: 1px; margin-top: -15px;">
+
+    </div>
+    <div class="row">
         <div class="card">
             <div class="card-body">
-                <img src="/image/jiyu.jpg" class="img-fluid">
+                <div id="featured-books" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#featured-books" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#featured-books" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#featured-books" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#featured-books"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#featured-books"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body">
-                <img src="/image/hasitenai.jpg" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card">
-            <div class="card-body">
-                <img src="/image/momo.jpg" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</div>
+
+
+</div> <!-- End of Container   -->
+
 
 <script src="/js/bootstrap.bundle.min.js"></script>
 
