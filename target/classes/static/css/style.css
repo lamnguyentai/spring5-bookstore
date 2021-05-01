@@ -6,14 +6,17 @@ body {
 .container {
     width: 90%;
 }
+
 .navbar {
     margin-bottom: 20px;
 }
+
 /* Show it is fixed to the top */
 body {
     min-height: 75rem;
     padding-top: 4.5rem;
 }
+
 .box {
     border: 1px solid red;
 }

@@ -1,73 +1,10 @@
 <!doctype html>
-<html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Book Store Project</title>
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-
-
-        }
-    </style>
-
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="/image/mynameicon.png">
-</head>
+<head th:replace="common/header :: common-header" />
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Lam's Bookstore</a>
-<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"-->
-<!--                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--            <span class="navbar-toggler-icon"></span>-->
-<!--        </button>-->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <div class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Books</a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Browse the bookself</a></li>
-                        <li><a class="dropdown-item" href="#">Store hours &#38; Direction</a></li>
-                        <li><a class="dropdown-item" href="#">FAQs</a></li>
-                    </ul>
-                </div>
-<!--                <form class="d-flex">-->
-<!--                    <input class="form-control me-2" type="search" placeholder="検索" aria-label="Search">-->
-<!--                    <button class="btn btn-secondary" type="submit">Search</button>-->
-<!--                </form>-->
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cart</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">My Acount</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div th:replace="common/header :: navbar" />
 
 <div class="container">
     <div class="row">
@@ -159,26 +96,13 @@
                         <div class="carousel-item active">
                             <img src="/image/shelf.png" class="img-fluid">
                             <div class="carousel-caption">
-                            <div class="row">
-                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/image/shelf.png" class="img-fluid">
-                            <div class="carousel-caption">
                                 <div class="row">
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
                                 </div>
                             </div>
                         </div>
@@ -186,12 +110,25 @@
                             <img src="/image/shelf.png" class="img-fluid">
                             <div class="carousel-caption">
                                 <div class="row">
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
-                                    <div class="col-sm-2"><img src="/image/jiyu.jpg"  class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/image/shelf.png" class="img-fluid">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
+                                    <div class="col-sm-2"><img src="/image/jiyu.jpg" class="img-fluid"></div>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +153,7 @@
 </div> <!-- End of Container   -->
 
 
-<script src="/js/bootstrap.bundle.min.js"></script>
+<div  th:replace="common/header :: body-bottom-scripts" />
 
 </body>
 </html>
