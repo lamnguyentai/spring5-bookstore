@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/header :: common-header"/>
+<body>
+
+<div th:replace="common/header :: navbar"/>
+
+<div class="container">
+    <div class="row" style="margin-bottom: -100px;">
+        <h1 class="section-headline"><span>User Account</span></h1>
+        <hr class="bg-dark border-dark" style="height: 6px; width: 100%; margin-top: -195px;">
+        <img class="img-fluid" src="/image/wood.png" style="margin-top: 20px;">
+    </div>
+    <div class="row" style="margin-top: 120px;">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Create new account</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Log in</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Forget password</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        </div>
+
+    </div>
+</div> <!-- End of Container   -->
+
+
+<div th:replace="common/header :: body-bottom-scripts"/>
+
+</body>
+</html>
