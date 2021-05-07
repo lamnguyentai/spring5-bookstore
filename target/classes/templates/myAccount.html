@@ -12,22 +12,74 @@
         <hr class="bg-dark border-dark" style="height: 6px; width: 100%; margin-top: -195px;">
         <img class="img-fluid" src="/image/wood.png" style="margin-top: 20px;">
     </div>
+    <!-- Nav tab -->
     <div class="row" style="margin-top: 120px;">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Create new account</button>
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab-1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Create new account</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Log in</button>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tab-2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Log in</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Forget password</button>
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tab-3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Forget password</button>
             </li>
         </ul>
+        <!-- Tab panel -->
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+<!--            Create new user panel-->
+            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="col-sm-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="newUsername" class="form-label">*Username</label>
+                            <input type="text" class="form-control" id="newUsername" name="username" required="required">
+                            <div class="form-text">Enter your username here.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">*Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required="required">
+                            <div class="form-text">Enter your email address here.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create new account</button>
+                    </form>
+                </div>
+            </div>
+<!--            Log in panel-->
+            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="col-sm-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">*Username</label>
+                            <input type="email" class="form-control" id="username" name="username" required="required">
+                            <div class="form-text">Enter your username here.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">*Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required="required">
+                            <div class="form-text">Enter your password here.</div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                </div>
+            </div>
+<!--            Forget password panel-->
+            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="col-sm-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recoverEmail" class="form-label">*Email address</label>
+                            <input type="email" class="form-control" id="recoverEmail" name="email" required="required">
+                            <div class="form-text">Enter your registed email address here.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
     </div>
